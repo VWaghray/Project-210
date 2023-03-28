@@ -29,7 +29,7 @@ def number_of_vehicle():
     threading.Timer(count, number_of_vehicle).start()
     transform_location = dropped_vehicle.get_transform()
     print("Location of each bot vehicle:",transform_location)
-    count + 0.4
+    count = count + 0.4
 
     if len(bot_vehicles) > 1:
         distance = lambda data: math.sqrt(
